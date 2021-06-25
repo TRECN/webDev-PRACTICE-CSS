@@ -23,12 +23,15 @@
             /*if the image above is repeated only horizontally repeat-x or vertically then repeat-y can be useful*/
             background-repeat: repeat-y;
         }
-        div{
+        div{/*
             background-image: url('resources/img_tree.png');
             background-repeat: no-repeat;
             background-position: right top;
             /*specify that the background image should be fixed*/
-            background-attachment: fixed;
+            /*background-attachment: fixed;
+            */
+            /*for the above task be can use a short hand*/
+            background:url('resources/img_tree.png') no-repeat right top fixed;
         }
         
     </style>
