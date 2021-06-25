@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-
+        /*setting the backround image of the body*/
+        body{/*
+            background-image: url('resources/paper.jpeg');
+        */
+            background-image: url(resources/bg.jpg);
+            /*by default the background image repeats itself but it
+            can be removed by the use of background-repeat property*/
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+        /*setting background image of p tag */
+        p{
+            background-image: url('resources/paper2.jpeg') ;
+            /*if the image above is repeated only horizontally repeat-x or vertically then repeat-y can be useful*/
+            background-repeat: repeat-y;
         }
     </style>
 </head>
 <body>
     <h1>Namaste world!</h1>
+    <!--The background image can also be set for specific elements-->
     <p>This page has an image as the background</p>
 </body>
 </html>
