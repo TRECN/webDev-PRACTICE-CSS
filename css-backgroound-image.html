@@ -7,7 +7,16 @@
     <title>Document</title>
     <style>
         /*setting the backround image of the body*/
-        
+        body{/*
+            background-image: url('resources/paper.jpeg');
+        */
+            background-image: url(resources/bg.jpg);
+            /*by default the background image repeats itself but it
+            can be removed by the use of background-repeat property*/
+            background-repeat: no-repeat;
+            /*background position specifies the position of the image*/
+            
+        }
         /*setting background image of p tag */
         p{
             background-image: url('resources/paper2.jpeg') ;
@@ -19,16 +28,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        body{/*
-            background-image: url('resources/paper.jpeg');
-        */
-            background-image: url(resources/bg.jpg);
-            /*by default the background image repeats itself but it
-            can be removed by the use of background-repeat property*/
-            background-repeat: no-repeat;
-            /*background position specifies the position of the image*/
-            
-        }
+        
     </style>
 </head>
 <body>
