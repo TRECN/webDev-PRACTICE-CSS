@@ -41,6 +41,14 @@
             width:300px;
             margin:auto;
         }
+        .inherit{
+            border: 1px dotted rgb(231, 23, 58);
+            background-color: white;
+            margin-left: 300px;
+        }
+        .ex1{
+            margin-left: inherit;
+        }
         
     </style>
 </head>
@@ -85,6 +93,13 @@
         split equally between the left and right margins:</p>
     <div class="auto">
         This div will be horizontally centered because it has margin:auto;
+    </div>
+
+    <!--using auto value-->
+    <h2>Use of the inherit value</h2>
+    <p>let the left margin be inherited feom the parent element:</p>
+    <div class="inherit">
+        <p class="ex1">This paragraph has an inherited left margin(from the div element).</p>
     </div>
 </body>
 </html>
