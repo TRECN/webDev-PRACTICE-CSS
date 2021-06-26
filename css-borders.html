@@ -37,21 +37,29 @@
             border-style: hidden;
         }
         .mix {
+            /*border-style:top right bottom left*/
             border-style: dotted dashed solid double;
         }
         .one{
             border-style: solid;
             /* 5px top and bottom, 20px on the sides */
             border-width: 5px 20px;
+            /*setting border color*/
+            border-color: red;
         }
         .two{
             border-style: dotted;
-            border-width: 20px 5px;
+            border-width: 2px 5px;
+            /*setting border color*/
+            border-color: green;
         }
         .three{
             border-style: double;
             border-width: 25px 10px 4px 30px;
+            /*setting border color of individual sides*/
+            border-color: red yellow blue green;
         }
+
     </style>
 </head>
 <body>
@@ -71,5 +79,7 @@
     <p class="one">width of 5px in top and bottom 20 px on right and left</p>
     <p class="two">width of 20px in top and bottom 5px right and left</p>
     <p class="three">width of all top right bottom left seperately</p>
+
+
 </body>
 </html>
