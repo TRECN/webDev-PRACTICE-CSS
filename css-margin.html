@@ -49,6 +49,12 @@
         .ex1{
             margin-left: inherit;
         }
+        .h50{
+          margin: 0 0 50px 0;  
+        }
+        .h20{
+            margin: 20px 0 0 0;
+        }
         
     </style>
 </head>
@@ -94,6 +100,7 @@
     <div class="auto">
         This div will be horizontally centered because it has margin:auto;
     </div>
+    <hr>
 
     <!--using auto value-->
     <h2>Use of the inherit value</h2>
@@ -101,5 +108,14 @@
     <div class="inherit">
         <p class="ex1">This paragraph has an inherited left margin(from the div element).</p>
     </div>
+    <hr>
+
+    <!--using margin collapse-->
+    <p>IN this example the h1 element has bottom margin of 50px and the h2 element has top margin of 20px. So,
+        THe vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the 
+        actual margin ends up being 50px.
+    </p>
+    <h1 class="h50">Heading 1</h1>
+    <h2 class="h20">Heading 2</h2>
 </body>
 </html>
