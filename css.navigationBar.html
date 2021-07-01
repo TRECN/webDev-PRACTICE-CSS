@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         ul{
             list-style-type: none;
             margin: 0;
             padding: 0;
-            width: 200px;
+            width: 25%;
             background-color: #f1f1f1;
-            border: 1px solid #555;
+            /* border: 1px solid #555; */
+            /*making vertical non scrolling nav bar*/
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+
         }
         li a{
             /*It displays the element in blocks which help us 
@@ -39,7 +45,7 @@
         /*adding border*/
         li{
             text-align: center;
-            border-bottom: 1px solid #555;
+            /* border-bottom: 1px solid #555; */
         }
         
     </style>
@@ -47,13 +53,25 @@
 <body>
     <!--Navigation bar-->
     <!--vertical navigation bar-->
-    <h2>Vertical Navigation bar</h2>
+    
     <ul class="first">
         <li ><a class="active" href="#">Home</a></li>
         <li ><a href="#">news</a></li>
         <li ><a href="#">Contact</a></li>
     </ul>
-    <hr>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
 
 </body>
 </html>
