@@ -17,9 +17,10 @@
             overflow: hidden;
             /*adding bg color to the ul will allow to have the whole list instead of the element*/
             background-color: #333;
-            position: fixed;
+            /*makes the nav bar stick to the header*/
+            position: sticky;
             /*makes the nav bar to the top*/
-            bottom: 0;
+            top: 0;
             width: 100%;
         }
         li{
@@ -45,6 +46,11 @@
     </style>
 </head>
 <body>
+    
+<div class="header">
+    <h2>Scroll Down</h2>
+    <p>Scroll down to see the sticky effect.</p>
+  </div>
     <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#news">News</a></li>
