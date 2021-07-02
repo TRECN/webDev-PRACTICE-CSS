@@ -40,6 +40,11 @@
         .active{
             background-color: #04AA6D;
         }
+        @media screen and (max-width:600px) {
+            .top li{
+                float: none;
+            }
+        }
         
         
 
@@ -51,7 +56,7 @@
     <h2>Scroll Down</h2>
     <p>Scroll down to see the sticky effect.</p>
   </div>
-    <ul>
+    <ul class="top">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
