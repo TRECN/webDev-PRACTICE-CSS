@@ -11,12 +11,16 @@
         }
         body{
             margin: 0;
+            background-color: #f1f1f1;
         }
         /*style the header*/
         .header{
             background-color: #f1f1f1;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+        }
+        .header h1{
+            font-size: 50px;
         }
         .nav{
             overflow: hidden;
@@ -39,15 +43,19 @@
         }
 
         /*adding style to column*/
-        .column{
+        .colLeft{
             float: left;
-            padding: 15px;
+            width: 75%;
         }
-        .column.side{
-            width: 25%;
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
         }
-        .column.middle{
-            width: 50%;
+        .fakeimg{
+            background-color: #aaa;
+            padding: 20px;
+            width: 100%;
         }
         /*Clear floats after the columns*/
         .row:after{
@@ -68,10 +76,12 @@
             text-align: center;
             padding: 5px;
             background-color: #f1f1f1;
+            margin-top: 20px;
         }
         .nav a.ll1{
             float: right;
         }
+        
     </style>
 </head>
 <body>
@@ -90,7 +100,7 @@
             <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>Title discription, 7/3/2021</h5>
-                <div class="fakeimg">IMAGE</div>
+                <div class="fakeimg" style="height: 200px;" >IMAGE</div>
                 <p>Some text....</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto consectetur at cupiditate 
                     neque similique autem, animi dolorum nemo. Quod repellat quidem aut! Fuga id provident, illum unde sint veniam!</p>
@@ -98,10 +108,31 @@
             <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>Title discription, 7/3/2021</h5>
-                <div class="fakeimg">IMAGE</div>
+                <div class="fakeimg" style="height: 200px;">IMAGE</div>
                 <p>Some text....</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto consectetur at cupiditate 
                     neque similique autem, animi dolorum nemo. Quod repellat quidem aut! Fuga id provident, illum unde sint veniam!</p>
+            </div>
+        </div>
+        <div class="colright">
+            <div class="card">
+                <h2>About me</h2>
+                <h5>Title discription, 7/3/2021</h5>
+                <div class="fakeimg" style="height: 100px;" >IMAGE</div>
+                <p>Some text....</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto consectetur at cupiditate 
+                    neque similique autem, animi dolorum nemo. Quod repellat quidem aut! Fuga id provident, illum unde sint veniam!</p>
+            </div>
+            <div class="card">
+                <h2>Populer Posts</h2>
+                
+                <div class="fakeimg" >IMAGE</div>
+                <div class="fakeimg" >IMAGE</div>
+                <div class="fakeimg" >IMAGE</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>some text....</p>
             </div>
         </div>
         
