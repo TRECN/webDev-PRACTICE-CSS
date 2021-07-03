@@ -10,7 +10,9 @@
             box-sizing: border-box;
         }
         body{
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
+            padding: 10px;
             background-color: #f1f1f1;
         }
         /*style the header*/
@@ -42,10 +44,16 @@
             transition: .5s ease;
         }
 
-        /*adding style to column*/
+        /*adding style to left col*/
         .colLeft{
             float: left;
             width: 75%;
+        }
+        .colRight{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
         }
         .card{
             background-color: white;
@@ -57,29 +65,26 @@
             padding: 20px;
             width: 100%;
         }
+
         /*Clear floats after the columns*/
         .row:after{
             content: "";
             display: table;
             clear: both;
         }
-        /*Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
-        @media screen and (max-width:600px) {
-            .column.side, .column.middle{
-                width: 100%;
-            }
-        }
-        .link{
-            float: right;
-        }
+        
         .footer{
             text-align: center;
-            padding: 5px;
+            padding: 20px;
             background-color: #f1f1f1;
             margin-top: 20px;
         }
-        .nav a.ll1{
-            float: right;
+        /*Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
+        @media screen and (max-width:600px) {
+            .colLeft, .colRight{
+                width: 100%;
+                padding: 0;
+            }
         }
         
     </style>
@@ -93,7 +98,7 @@
         <a href="#home">HOME</a>
         <a href="#home">ABOUT</a>
         <a href="#home">CONTENT</a>
-        <a href="#" class="ll1">CONTACT</a>
+        <a href="#" style="float: right;">CONTACT</a>
     </div>
     <div class="row">
         <div class="colLeft">
@@ -114,14 +119,13 @@
                     neque similique autem, animi dolorum nemo. Quod repellat quidem aut! Fuga id provident, illum unde sint veniam!</p>
             </div>
         </div>
-        <div class="colright">
+        <div class="colRight">
             <div class="card">
                 <h2>About me</h2>
                 <h5>Title discription, 7/3/2021</h5>
                 <div class="fakeimg" style="height: 100px;" >IMAGE</div>
                 <p>Some text....</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto consectetur at cupiditate 
-                    neque similique autem, animi dolorum nemo. Quod repellat quidem aut! Fuga id provident, illum unde sint veniam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto consectetur at cupiditate </p>
             </div>
             <div class="card">
                 <h2>Populer Posts</h2>
