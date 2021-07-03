@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             margin: 0;
         }
@@ -19,6 +22,7 @@
             overflow: hidden;
             background-color: #333;
         }
+        /*styling the topnav links*/
         .nav a{
             float: left;
             display: block;
@@ -27,10 +31,23 @@
             text-decoration: none;
             color: white;
         }
+        /*changing the color of nav on hover*/
         .nav a:hover{
             color: black;
             background-color: #ddd;
             transition: .5s ease;
+        }
+
+        /*adding style to column*/
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
