@@ -10,7 +10,7 @@
             box-sizing: border-box;
         }
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Lucida Sans", sans-serif;
             padding: 10px;
         }
         .header{
@@ -18,22 +18,39 @@
             background-color: purple;
             color: white;
         }
-        .side{
+        .leftSide{
             padding: 20px;
             float: left;
+            width: 30%;
         }
         .card{
             color: white;
             margin-bottom: 7px;
             padding: 8px;
             background-color: #33b5e5;
-            width: 200px;
             border-radius: 4px;
         }
         h5{
             margin: 0;
         }
-
+        .middle{
+            width: 50%;
+            float: left;
+            display: block;
+        }
+        .rightSide{
+            width: 20%;
+            background-color: #33b5e5;
+            padding: 15px;
+            float: left;
+        }
+        .aside{
+            background-color: #33b5e5;
+            float: left;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -41,18 +58,32 @@
         <h1>CHANIA</h1>
     </div>
     <div class="row">
-        <div class="side">
+        <div class="leftSide">
             <div class="card">
                 <h5>THE FLIGHT</h5>
             </div>
             <div class="card">
-                <h5>THE FLIGHT</h5>
+                <h5>THE CITY</h5>
             </div>
             <div class="card">
-                <h5>THE FLIGHT</h5>
+                <h5>THE ISLAND</h5>
             </div>
             <div class="card">
-                <h5>THE FLIGHT</h5>
+                <h5>THE FOOD</h5>
+            </div>
+        </div>
+        <div class="middle">
+            <h2>The City</h2>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
+        <div class="RightSide"> 
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
             </div>
         </div>
     </div>
